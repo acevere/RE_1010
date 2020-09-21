@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RE_1010" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4fc-rl-Y7j">
+                                <rect key="frame" x="20" y="697" width="120" height="120"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" allowsDirectInteraction="YES"/>
+                                </accessibility>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Crj-pk-5lJ"/>
+                                    <constraint firstAttribute="height" constant="120" id="dTL-qp-8Kk"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Pa-Ac-j4n">
+                                <rect key="frame" x="147" y="697" width="120" height="120"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="HlJ-zc-MnH"/>
+                                    <constraint firstAttribute="height" constant="120" id="JAJ-HS-ffs"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fkl-T3-NU0" userLabel="Game Score">
+                                <rect key="frame" x="145.5" y="104" width="123" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvd-Me-vG4">
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="150"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wC1-xh-tD5">
+                                        <rect key="frame" x="104" y="0.0" width="19" height="150"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="VpI-nG-r45" userLabel="height = 120"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r3L-HH-nvY">
+                                <rect key="frame" x="20.5" y="274" width="373" height="373"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="373" id="0Jh-BQ-Us8"/>
+                                    <constraint firstAttribute="height" constant="373" id="7YF-4S-20Q"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LY8-iO-SUk">
+                                <rect key="frame" x="274" y="697" width="120" height="120"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="I2E-K4-159"/>
+                                    <constraint firstAttribute="width" constant="120" id="osl-Xz-bmk"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.27059027549999998" green="0.27058452370000002" blue="0.27058839800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="9Pa-Ac-j4n" firstAttribute="top" secondItem="r3L-HH-nvY" secondAttribute="bottom" constant="50" id="0r4-cv-1nL"/>
+                            <constraint firstItem="fkl-T3-NU0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9yP-Pq-RW1"/>
+                            <constraint firstItem="r3L-HH-nvY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FTf-BX-NXX"/>
+                            <constraint firstItem="r3L-HH-nvY" firstAttribute="top" secondItem="fkl-T3-NU0" secondAttribute="bottom" constant="20" id="NlR-iB-HDk"/>
+                            <constraint firstItem="9Pa-Ac-j4n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tpg-rg-9Vy"/>
+                            <constraint firstItem="LY8-iO-SUk" firstAttribute="top" secondItem="r3L-HH-nvY" secondAttribute="bottom" constant="50" id="Zp6-mO-v5S"/>
+                            <constraint firstItem="4fc-rl-Y7j" firstAttribute="top" secondItem="r3L-HH-nvY" secondAttribute="bottom" constant="50" id="kTL-Nr-7mZ"/>
+                            <constraint firstItem="fkl-T3-NU0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="wNf-pv-tHl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LY8-iO-SUk" secondAttribute="trailing" constant="20" id="yCo-bl-C4K"/>
+                            <constraint firstItem="4fc-rl-Y7j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ycC-Wi-kBk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="block1" destination="4fc-rl-Y7j" id="kus-wD-r95"/>
+                        <outlet property="block2" destination="9Pa-Ac-j4n" id="dtT-Z4-SgC"/>
+                        <outlet property="block3" destination="LY8-iO-SUk" id="GRq-wK-Ke7"/>
+                        <outlet property="contentView" destination="r3L-HH-nvY" id="eAD-ON-P9c"/>
+                        <outlet property="gameScore" destination="fkl-T3-NU0" id="qMw-qI-iE4"/>
+                        <outlet property="scoreLabel" destination="wC1-xh-tD5" id="D8F-KI-MQQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
